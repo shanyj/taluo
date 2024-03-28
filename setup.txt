@@ -1,0 +1,5 @@
+curl https://sh.rustup.rs -sSf | sh
+pip install langchain
+pip install langchain_openai
+pip install langgraph
+pip install simplejson
