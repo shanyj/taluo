@@ -1,13 +1,15 @@
-from langchain_core.tools import Tool
+from langchain_community.tools import DuckDuckGoSearchRun
+from langchain.tools import Tool
 
 
-def fake_run():
+# search = DuckDuckGoSearchRun()
+
+def fake(*args, **kwargs):
     pass
 
 
-fake_tools = Tool(
-    name="Fake",
-    func=fake_run,
-    description="伪装工具，什么都不做",
-    return_direct=True
+search_tool = Tool(
+    name="fake",
+    description="什么都做不了的工具,永远不要选择这个工具",
+    func=fake,
 )

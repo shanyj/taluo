@@ -1,7 +1,10 @@
 # coding: utf-8
+import os
 
-MAIGPT_BASE_URL = 'https://maigpt.in.taou.com/rpc/platforms/go_pbs/maigpt/proxy/v1'
-EMBEDDINGS_URL = 'https://maigpt.in.taou.com/rpc/platforms/go_pbs/maigpt/proxy/v1/embeddings'
+os.environ['SERPER_API_KEY'] = "773ddb9f6eaa4923c165598bb918e2999edd9ab9150a088d83360187d5142392"
+
+MAIGPT_BASE_URL = 'https://api.openai.com/v1'
+EMBEDDINGS_URL = 'https://api.openai.com/v1/embeddings'
 EMBEDDINGS_MODEL = 'text-embedding-ada-002'
 
 
