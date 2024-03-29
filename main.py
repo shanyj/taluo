@@ -50,7 +50,7 @@ class ChatHistory(object):
 
 class TaLuoAgent(object):
     def __init__(self, user):
-        self.open_ai_key = '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'
+        self.open_ai_key = 'sk-'
         self.llm = None
         self.memory_key = 'chat_history'
         self.memory = None
